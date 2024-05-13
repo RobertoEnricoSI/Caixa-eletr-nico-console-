@@ -11,10 +11,12 @@ namespace Caixa_eletrônico_console_
         public double valor;
         public char tipo;
         public Transacao duplicata;
-        public Transacao(double valor, char tipo)
+        public Conta Conta;
+        public Transacao(double valor, char tipo, Conta conta)
         {
             this.valor = valor;
             this.tipo = tipo;
+            this.Conta = conta;
         }
     }
 }
