@@ -5,6 +5,8 @@ using System.Runtime.CompilerServices;
 using System.Runtime.Intrinsics.Arm;
 using static System.Net.Mime.MediaTypeNames;
 
+
+
 List<CCorrente> contas = new List<CCorrente>();          
 int menu()
 {

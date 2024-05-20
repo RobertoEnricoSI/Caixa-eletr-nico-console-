@@ -13,6 +13,39 @@ namespace Caixa_eletrônico_console_
         protected double limite;
         protected bool status;
         protected List<Transacao> transacoes;
+        public string Numero
+        {
+            get=>this.numero;
+            set
+            {
+                if(value != "" && Int32.TryParse(value,out int a))
+                {
+                    this.numero = value;
+                }
+            }
+        }
+        public double Saldo
+        {
+            get => this.saldo;
+        }
+        public double Limite
+        {
+            get=> this.limite; // double l = conta.Limite; Console.Write(conta.Limite);
+            set                // conta.Limite = 500;
+            {
+                if(value>=0)
+                    this.limite = value;
+            }
+        }
+        public bool Status
+        {
+            get => this.status;
+            set => this.status = value;
+        }
+        public List<Transacao> Transacoes
+        {
+            get=> this.transacoes;
+        }
         public Conta()
         {
             this.saldo = 0;
