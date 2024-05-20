@@ -10,7 +10,7 @@ namespace Caixa_eletrônico_console_
 {
     public class CCorrente:Conta
     {
-        public bool especial;
+        private bool especial;
         public CCorrente(string numero, double limite):this()
         {
             this.numero = numero;

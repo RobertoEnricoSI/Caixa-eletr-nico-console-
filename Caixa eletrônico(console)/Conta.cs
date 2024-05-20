@@ -8,11 +8,11 @@ namespace Caixa_eletrônico_console_
 {
     public class Conta
     {
-        public string numero;
-        public double saldo;
-        public double limite;
-        public bool status;
-        public List<Transacao> transacoes;
+        protected string numero;
+        protected double saldo;
+        protected double limite;
+        protected bool status;
+        protected List<Transacao> transacoes;
         public Conta()
         {
             this.saldo = 0;

@@ -8,10 +8,10 @@ namespace Caixa_eletrônico_console_
 {
     public class Transacao
     {
-        public double valor;
-        public char tipo;
-        public Transacao duplicata;
-        public Conta Conta;
+        private double valor;
+        private char tipo;
+        private Transacao duplicata;
+        private Conta Conta;
         public Transacao(double valor, char tipo, Conta conta)
         {
             this.valor = valor;
