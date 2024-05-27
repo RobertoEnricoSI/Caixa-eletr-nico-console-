@@ -84,8 +84,8 @@ namespace Caixa_eletrônico_console_
                    &&              // E
                    destino.Depositar(valor)) // Depósito tem que ser aceito
             {
-                transacoes[transacoes.Count - 1].duplicata = destino.transacoes[destino.transacoes.Count - 1];
-                destino.transacoes[destino.transacoes.Count - 1].duplicata = transacoes[transacoes.Count - 1];
+                transacoes[transacoes.Count - 1].Duplicata = destino.transacoes[destino.transacoes.Count - 1];
+                destino.transacoes[destino.transacoes.Count - 1].Duplicata = transacoes[transacoes.Count - 1];
                 return true;
             }
             return false;

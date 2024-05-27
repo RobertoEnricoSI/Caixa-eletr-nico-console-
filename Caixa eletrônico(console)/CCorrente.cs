@@ -22,5 +22,10 @@ namespace Caixa_eletrônico_console_
             this.status = true;
             this.transacoes = new List<Transacao>();
         }
+        public bool Especial
+        {
+            get => this.especial;
+            set => this.especial = value;
+        }
     }
 }

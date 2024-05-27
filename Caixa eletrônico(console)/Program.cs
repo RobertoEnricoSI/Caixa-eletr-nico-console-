@@ -70,9 +70,9 @@ void esc12()
 {
     foreach (var item in contas)
     {
-        if (item.status == true)
+        if (item.Status == true)
         {
-            Console.WriteLine("Saldo da conta "+item.numero+": "+item.saldo);
+            Console.WriteLine("Saldo da conta "+item.Numero+": "+item.Saldo);
         }
     }
 }
@@ -83,9 +83,9 @@ void esc13()
     string contex = Console.ReadLine();
     foreach(var item in contas)
     {
-        if (item.numero == contex)
+        if (item.Numero == contex)
         {
-            item.status = false;
+            item.Status = false;
             Console.WriteLine("Conta excluida com sucesso");
             return;
         }
@@ -106,7 +106,7 @@ void esc2()
     {
         Console.WriteLine("Essa conta nao existe ou esta desativada");
     }
-    else if (contas[con].status == true)
+    else if (contas[con].Status == true)
     {
         do
             {
@@ -192,7 +192,7 @@ void esc23(int Con)
     {
         foreach(var item in contas)
             {
-                if (item.numero == destino)
+                if (item.Numero == destino)
                 {
                     double val;
                     Console.Write("Digite o valor a transferir: ");
